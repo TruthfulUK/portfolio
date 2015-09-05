@@ -1,0 +1,13 @@
+language: node_js
+cache:
+  npm: true
+  bower: true
+node_js:
+- '0.12'
+before_script:
+- npm install -g gulp
+script: gulp deploy
+notifications:
+  email:
+    on_success: change
+    on_failure: always

@@ -1,0 +1,219 @@
+/*
+
+
+ ,ggggggggggggggg
+dP""""""88"""""""               I8  ,dPYb,    ,dPYb,           ,dPYb,
+Yb,_    88                      I8  IP'`Yb    IP'`Yb           IP'`Yb
+ `""    88                   8888888I8  8I    I8  8I           I8  8I
+        88                      I8  I8  8'    I8  8'           I8  8'
+        88 ,gggggg, gg      gg  I8  I8 dPgg,  I8 dP gg      gg I8 dP
+        88 dP""""8I I8      8I  I8  I8dP" "8I I8dP  I8      8I I8dP
+  gg,   88,8'    8I I8,    ,8I ,I8, I8P    I8 I8P   I8,    ,8I I8P
+   "Yb,,8,dP     Y8,d8b,  ,d8b,d88b,d8     I8,d8b,_,d8b,  ,d8b,d8b,_
+     "Y8P8P      `Y8P'"Y88P"`Y8P""Y88P     `YPI8"888P'"Y88P"`Y8P'"Y88
+                                              I8 `8,
+        designed by truthful                  I8  `8,
+        code @ github.com/truthfuluk          I8   8I
+        ----------------------------          I8   8I
+                                              I8, ,8'
+                                               "Y8P'
+
+*/
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,300);
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.bg {
+  min-height: 100%;
+  min-width: 100%;
+  z-index: -10;
+  background: url(../images/bg-desk.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.noise {
+  z-index: 0;
+  background: url(../images/noise.png);
+}
+
+.grad {
+  background: url(../images/grad.png) repeat-x;
+}
+
+h1 {
+  font-weight: 700;
+  font-style: italic;
+  font-size: 2.0rem;
+  text-transform: uppercase;
+  margin: 0 0 6px 0;
+  color: #0097a7;
+  -webkit-text-shadow: 0px 1px 1px black;
+  -moz-text-shadow: 0px 1px 1px black;
+  text-shadow: 0px 1px 1px black;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  margin: 0 0 2px 0;
+  color: #fff;
+  -webkit-text-shadow: 0px 1px 1px black;
+  -moz-text-shadow: 0px 1px 1px black;
+  text-shadow: 0px 1px 1px black;
+}
+
+p {
+  font-weight: 400;
+  margin: 0;
+  color: #fff;
+  font-size: 1.2rem;
+  -webkit-text-shadow: 0px 1px 1px black;
+  -moz-text-shadow: 0px 1px 1px black;
+  text-shadow: 0px 1px 1px black;
+}
+
+.framing {
+  background: #000;
+}
+
+.container .nav {
+  height: 90px;
+  border-bottom: 1px solid #0097a7;
+}
+.container .nav ul {
+  margin: 40px 0;
+  text-align: right;
+  padding: 0;
+}
+.container .nav ul li {
+  display: inline;
+  list-style-type: none;
+  font-weight: 300;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 0 0.5rem 0;
+}
+.container .nav ul li a {
+  color: #6d6d6d;
+  text-decoration: none;
+}
+.container .nav ul li a:hover {
+  color: #929292;
+}
+.container .nav ul .active {
+  color: #00bcd4;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+  border: 1px solid #00bcd4;
+  padding: 8px;
+}
+.container .nav ul .active a {
+  color: #0097a7;
+  text-decoration: none;
+}
+.container .nav ul .active a:hover {
+  color: #0097a7;
+}
+.container .nav .logo {
+  margin-top: 40px;
+}
+.container .welcome, .container .sponsors, .container .sponsors, .container .services, .container .service, .container .preview {
+  margin-top: 2%;
+}
+.container .welcome, .container .sponsors {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid #1f1f1f;
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+}
+.container .sponsors img {
+  margin-right: 5px;
+}
+.container .services, .container .service {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid #1f1f1f;
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+}
+.container .service {
+  height: 200px;
+  position: relative;
+}
+.container .service .serv-title {
+  border-bottom: 1px solid #070707;
+  background: #080808;
+  text-align: center;
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  left: 0;
+}
+.container .service .serv-title h2 {
+  font-size: 1.4rem;
+  margin-top: 4%;
+}
+.container .preview {
+  height: 200px;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid #1f1f1f;
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+.container .preview img {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-left: -15%;
+  margin-top: -35%;
+  z-index: -10;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  -webkit-transform: rotate(7deg);
+  -moz-transform: rotate(7deg);
+  -ms-transform: rotate(7deg);
+  -o-transform: rotate(7deg);
+  transform: rotate(7deg);
+}
+.container .preview img:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+.container .preview .prev-name {
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  padding: 15px 5px 5px 15px;
+  bottom: 0;
+  z-index: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+.container .preview .prev-name p {
+  color: #a6a6a6;
+  text-transform: uppercase;
+}
+
+.hire {
+  padding: 200px;
+  margin-top: 2%;
+}
+
+.footer {
+  padding: 50px;
+  margin-top: 0;
+}

@@ -1,0 +1,88 @@
+@mixin border-radius($radius) {
+        -webkit-border-radius: $radius;
+        -moz-border-radius: $radius;
+        -ms-border-radius: $radius;
+        -o-border-radius: $radius;
+        border-radius: $radius;
+}
+
+@mixin border-radius-tl($radius) {
+        -webkit-border-top-left-radius: $radius;
+        -moz-border-top-left-radius: $radius;
+        -ms-border-top-left-radius: $radius;
+        -o-border-top-left-radius: $radius;
+        border-top-left-radius: $radius;
+}
+
+@mixin border-radius-tr($radius) {
+        -webkit-border-top-right-radius: $radius;
+        -moz-border-top-right-radius: $radius;
+        -ms-border-top-right-radius: $radius;
+        -o-border-top-right-radius: $radius;
+        border-top-right-radius: $radius;
+}
+
+@mixin border-radius-bl($radius) {
+        -webkit-border-bottom-left-radius: $radius;
+        -moz-border-bottom-left-radius: $radius;
+        -ms-border-bottom-left-radius: $radius;
+        -o-border-bottom-left-radius: $radius;
+        border-bottom-left-radius: $radius;
+}
+
+@mixin border-radius-br($radius) {
+        -webkit-border-bottom-right-radius: $radius;
+        -moz-border-bottom-right-radius: $radius;
+        -ms-border-bottom-right-radius: $radius;
+        -o-border-bottom-right-radius: $radius;
+        border-bottom-right-radius: $radius;
+}
+
+@mixin transition($transition) {
+        -webkit-transition: $transition;
+           -moz-transition: $transition;
+            -ms-transition: $transition;
+             -o-transition: $transition;
+                transition: $transition;
+}
+
+@mixin transform($transform) {
+        -webkit-transform: $transform;
+           -moz-transform: $transform;
+            -ms-transform: $transform;
+             -o-transform: $transform;
+                transform: $transform;
+}
+
+@mixin animation($animation) {
+        -webkit-animation: $animation;
+        -moz-animation: $animation;
+        -ms-animation: $animation;
+        -o-animation: $animation;
+        animation: $animation;
+}
+
+@mixin box-shadow($shadow) {
+        -webkit-box-shadow: $shadow;
+           -moz-box-shadow: $shadow;
+                box-shadow: $shadow;
+}
+
+@mixin text-shadow($shadow) {
+        -webkit-text-shadow: $shadow;
+           -moz-text-shadow: $shadow;
+                text-shadow: $shadow;
+}
+
+@mixin font-smoothing($smoothing) {
+        -webkit-font-smoothing: $smoothing;
+           -moz-font-smoothing: $smoothing;
+            -ms-font-smoothing: $smoothing;
+                font-smoothing: $smoothing;
+}
+
+@mixin opacity($opacity) {
+        opacity: $opacity;
+        $opacity-ie: $opacity * 100;
+        filter: alpha(opacity=$opacity-ie); // IE8
+}
