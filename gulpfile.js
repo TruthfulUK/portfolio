@@ -52,7 +52,7 @@ var paths = {
   ],
 
   misc: [
-    'src/misc/**/*'
+    'src/misc/**/.*'
   ]
 }
 

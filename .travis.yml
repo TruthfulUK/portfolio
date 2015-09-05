@@ -1,11 +1,14 @@
 language: node_js
+sudo: false
 cache:
-  npm: true
-  bower: true
+  directories:
+    - node_modules
+    - bower_components
 node_js:
 - '0.12'
 before_script:
 - npm install -g gulp
+- bower install
 script: gulp deploy
 notifications:
   email:
